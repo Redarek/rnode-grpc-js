@@ -113,7 +113,7 @@ export const run = async ({args, cwd, npmBin}) => {
   await fs.remove(dirPath)
   await mapAsync(fs.ensureDir, newDirs)
 
-  log(blue('Startinmg downloads...'))
+  log(blue('Starting downloads...'))
 
   // Download all files
   await downloadAll(protoDownloads)
